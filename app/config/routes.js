@@ -14,7 +14,7 @@ var router = (
   <Router>
     <Route path='/' component={Main}>
       <IndexRoute component={Home} />
-      <Route path='playerOne' header='Player One' heacomponent={PromptContainer} />
+      <Route path='playerOne' header='Player One' component={PromptContainer} />
       <Route path='playerTwo/:playerOne' header='player Two' component={PromptContainer}/>
     </Route>
   </Router>
