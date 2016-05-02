@@ -13,6 +13,7 @@ var ConfirmBattleContainer = React.createClass({
       playerInfo: []
     };
   },
+
   componentWillMount: function () {
     console.log('componentWillMount');
   },
@@ -34,6 +35,16 @@ var ConfirmBattleContainer = React.createClass({
   componentWillUnmount: function () {
     console.log('componentWillUnmount');
   },
+
+  handleInitiateBattle: function () {
+    this.context.router.push({
+      pathname: '/results',
+      state: {
+        playersInfo: this.state.playersInfo
+      }
+    });
+  },
+  
   render: function () {
     return (
       <ConfirmBattle
