@@ -21,7 +21,11 @@ ConfirmBattle.PropTypes = {
 function ConfirmBattle (props) {
   var element;
   if (props.isLoading) {
-    element = (<p> Loading... </p>);
+    element = (
+      <div className='jumbotron col-sm-12 text-center' style={styles.transparentBg}>
+        <h1>Loading...</h1>
+      </div>
+    );
   } else {
     element = (
       <div className='jumbotron col-sm-12 text-center' style={styles.transparentBg}>
