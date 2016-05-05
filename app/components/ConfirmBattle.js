@@ -3,20 +3,13 @@ var styles = require('../styles');
 var Link = require('react-router').Link;
 var UserDetails = require('./UserDetails');
 var UserDetailsWrapper = require('./UserDetailsWrapper');
+var LoadingMessage = require('./LoadingMessage');
 var PropTypes = React.PropTypes;
 
 
 function puke(object) {
   return (
     <pre>{JSON.stringify(object, null, ' ')}</pre>
-  );
-}
-
-function LoadingMessage(props) {
-  return (
-    <div className='jumbotron col-sm-12 text-center' style={styles.transparentBg}>
-      <h1>Loading...</h1>
-    </div>
   );
 }
 
