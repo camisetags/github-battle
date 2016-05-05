@@ -3,10 +3,10 @@
 This is the Github battle from react program
 
 to run this project, just run:
-'''
-  npm install
-'''
+```shell
+$ npm install
+```
 And then:
-'''
-  npm start
-'''
+```shell
+$ npm start
+```
